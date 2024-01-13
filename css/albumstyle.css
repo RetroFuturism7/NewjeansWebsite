@@ -1,0 +1,64 @@
+ .album {
+
+
+     width: 1400px;
+     margin: 0 auto;
+     /* 清除浮动 */
+     overflow: hidden;
+ }
+
+ .album .album1 {
+     float: left;
+     width: 400px;
+     height: 450px;
+
+     margin-right: 100px;
+ }
+
+ .album .album2 {
+     float: left;
+     width: 400px;
+     height: 450px;
+
+     margin-right: 100px;
+     transition: all 0.3s ease-in-out;
+ }
+
+ .album .album3 {
+     float: left;
+     width: 400px;
+     height: 450px;
+     transition: all 0.3s ease-in-out;
+
+ }
+
+ .album .album1 img,
+ .album .album2 img,
+ .album .album3 img {
+     transition: all 0.3s ease-in-out;
+ }
+
+ .album .album1 img:hover,
+ .album .album2 img:hover,
+ .album .album3 img:hover {
+     scale: 0.93;
+ }
+
+
+
+
+
+ .album a {
+     text-align: center;
+     text-decoration: none;
+     color: black;
+ }
+
+ .album a:hover {
+     color: pink;
+
+ }
+
+ .album h4 {
+     text-align: center;
+ }

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewJeans</title>
+
+    <style>
+        /* 英文字体样式 */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+        html {
+            /* 锚点定位被顶部固定导航栏遮住的解决方案 */
+            /* 如果滚动条在其他元素上，将 scroll-padding-top 设置到附滚动条的元素即可 */
+            scroll-padding-top: 60px;
+        }
+
+        /* 设置背景图片 */
+        body {
+            background-image: url(images/bg-main.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /* css全屏铺满自适应 */
+            background-size: cover;
+            font-family: Poppins;
+            margin: 0;
+        }
+
+        /* newjeans字体图片 */
+        .imgtitle {
+            display: block;
+            width: 300px;
+            margin: 70px auto;
+        }
+
+
+        /* 四个标题统一样式 */
+        .wtitle {
+            background-color: pink;
+            width: 200px;
+            text-align: center;
+            margin: 50px auto;
+            border-radius: 41.6px;
+            font-size: 40px;
+        }
+
+
+        /* 一键回到顶部按钮样式 */
+        .totop {
+            position: fixed;
+            right: 0px;
+            top: 70%;
+            width: 50px;
+            height: 50px;
+        }
+
+
+
+        #switchimg {
+            border-radius: 10px;
+            margin: 10px auto;
+            width: 800px;
+            height: 500px;
+            display: block;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/headerstyle.css">
+    <link rel="stylesheet" href="css/introductionstyle.css">
+    <link rel="stylesheet" href="css/memberstyle.css">
+    <link rel="stylesheet" href="css/albumstyle.css">
+    <link rel="stylesheet" href="css/footerstyle.css">
+    <link rel="stylesheet" href="css/videostyle.css">
+
+    <!-- 引入js文件 -->
+    <script src="js/slider.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+</head>
+
+
+
+
+<body>
+
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav-logo">NewJeans</a>
+
+            <div class="nav-title">
+                <a href="#title1">基本介绍</a>
+                <a href="#title2">组合成员</a>
+                <a href="#title3">主要作品</a>
+                <a href="#title4">推荐视频</a>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+    <img class="imgtitle" src="images/main-title.png" alt="NewJeans">
+
+
+
+
+    <!-- 第一部分 -->
+    <h1 class="wtitle" id="title1">基本介绍</h1>
+
+    <!-- 把一个图片一段字放进一个盒子里 -->
+    <!-- <div style="width: 1100px; margin: 10px auto; overflow: hidden;"> -->
+    <div class="introbox1">
+        <!-- <img src="images/10002.jpg" title="NewJeans" class="njsimg1" > -->
+        <div id="slider">
+            <ul class="slider-item-container">
+                <!-- 一般来说点击轮播图，会跳转到该图片对应的详情页面，所以用 <a> 标签包裹图片 -->
+                <li><a href="#"><img src="images/switch/10002.jpg" /></a></li>
+                <li><a href="#"><img src="images/switch/10014.jpg" /></a></li>
+                <li><a href="#"><img src="images/switch/10050.jpg" /></a></li>
+                <li><a href="#"><img src="images/switch/nj.jpg" /></a></li>
+                <li><a href="#"><img src="images/switch/njj.jpg" /></a></li>
+            </ul>
+            <div class="arrow-container">
+                <!-- 小于号字符实体 -->
+                <span class="left-arrow"> &lt; </span>
+                <!-- 大于号字符实体 -->
+                <span class="right-arrow"> &gt; </span>
+            </div>
+            <div class="indicator-container">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+        </div>
+
+        <p class="p1">NewJeans（뉴진스）是HYBE旗下厂牌ADOR于2022年7月22日推出的女子演唱组合，由金玟池（MINJI）、HANNI（Phạm Ngọc
+            Hân）、DANIELLE（Danielle
+            Marsh、모지혜）、姜谐潾（HAERIN）、李惠仁（HYEIN）五名成员组成 。组合名“NewJeans”表达了成为时代偶像的愿望，就像每天都能找到并且任何时候都不会厌倦的牛仔裤，也包含了成为“New
+            Genes”的决心
+        </p>
+    </div>
+
+
+    <div class="introbox2">
+        <p class="p2">2022年7月22日，公开首张迷你专辑《New Jeans》的第一首主打歌《Attention》的MV并正式出道 ；7月23日，公开第二首主打歌《Hype Boy》的MV
+            ；7月25日，公开收录曲《Hurt》的MV ；8月1日，公开首张迷你专辑《New Jeans》的音源及第三首主打歌《Cookie》的MV ；8月8日，实体专辑正式发行 ，刷新了历代女团出道专辑首周销量的最高纪录
+            ；8月12日，歌曲《Attention》成为近五年K-POP偶像出道歌曲中唯一一首在主要音源实时榜达成“All Kill”的歌曲 。2023年1月2日，发行首张单曲专辑《OMG》
+            ；7月21日，发行第二张迷你专辑《Get Up》
+        </p>
+
+        <img src="images/10056.jpg" title="NewJeans" class="njsimg2">
+    </div>
+
+
+
+
+
+
+    <!-- 滚动栏旁边设置返回网页顶部的按钮 -->
+    <a href="#"><img src="images/totop.png" class="totop"></a>
+
+    <!-- 第二部分 -->
+    <h1 class="wtitle" style="margin-top: 200px;" id="title2">组合成员</h1>
+
+    <!--点击图片可以去往她的超话主持人微博主页 -->
+    <div
+        style="height: 350px; margin: 50px auto; overflow: hidden; display: flex; justify-content: space-between; padding: 0 100px;">
+        <div class="mem">
+            <p class="mem-p1">Minji</p>
+            <a href="https://weibo.com/u/6045819468?refer_flag=1008085010_" title="minji" target="_blank">
+                <img src="images/minji.jpg">
+            </a>
+        </div>
+        <div class="mem">
+            <p class="mem-p2">Hanni</p>
+            <a href="https://weibo.com/7790681131?refer_flag=1001030103_" title="hanni" target="_blank">
+                <img src="images/hanni.jpg">
+            </a>
+
+        </div>
+        <div class="mem">
+            <p class="mem-p3">Danielle</p>
+            <a href="https://weibo.com/u/7634564869" title="danielle" target="_blank"><img
+                    src="images/danielle.jpg"></a>
+        </div>
+        <div class="mem">
+            <p class="mem-p4">Haerin</p>
+            <a href="https://weibo.com/u/7773821099" title="haerin" target="_blank"><img src="images/haerin.jpg"></a>
+        </div>
+        <div class="mem">
+            <p class="mem-p5">Hyein</p>
+            <a href="https://weibo.com/u/5766780354" title="hyein" target="_blank"><img src="images/hyein.jpg"></a>
+        </div>
+
+    </div>
+
+
+    <!-- 第三部分 -->
+    <h1 class="wtitle" style="margin-top: 200px;" id="title3">主要作品</h1>
+
+    <!-- 用一个大盒子装了三个小盒子，一张专辑是一个小盒子 -->
+    <!-- 点击对应专辑图片或专辑名字会跳转到QQ音乐网站进行收听 -->
+    <div class="album">   
+        <div class="album1">
+            <a href="https://y.qq.com/n/ryqq/albumDetail/001fFuNG0R303z" target="_blank">
+                <img src="images/newjeansep.webp" style="border-radius: 10px; margin:0 auto; display: block;">
+                <h2>1st EP 'New Jeans'</h2>
+            </a>
+            <h4>发行时间：2022-08-01</h4>
+
+        </div>
+        <div class="album2">
+            <a href="https://y.qq.com/n/ryqq/albumDetail/003dzmv64ez17A" target="_blank">
+                <img src="images/omgep.webp" style="border-radius: 10px; margin:0 auto; display: block;">
+                <h2>'OMG'</h2>
+            </a>
+            <h4>发行时间：2023-01-02</h4>
+
+        </div>
+
+        <div class="album3">
+            <a href="https://y.qq.com/n/ryqq/albumDetail/002mv7Hn0ez5bk" target="_blank">
+                <img src="images/getupep.webp" style="border-radius: 10px; margin:0 auto; display: block;">
+                <h2>2nd EP 'Get Up'</h2>
+            </a>
+            <h4>发行时间：2023-07-21</h4>
+        </div>
+    </div>
+
+    <!-- 第四部分 -->
+    <!-- 一行一个盒子，即一个盒子装两个视频 -->
+    <h1 class="wtitle" style="margin-top: 200px;" id="title4">推荐视频</h1>
+    <div class="videobox">
+        <div class="video">
+            <iframe
+                src="https://player.bilibili.com/player.html?aid=476193097&bvid=BV1AK411r7Bq&cid=922330527&p=1&autoplay=0"
+                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                style="width: 500px; height: 300px;"> </iframe>
+        </div>
+
+        <div class="video">
+            <iframe src="//player.bilibili.com/player.html?aid=648925938&bvid=BV1he4y1K7nu&cid=929778564&p=1&autoplay=0"
+                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                style="width: 500px; height: 300px;"> </iframe>
+        </div>
+    </div>
+
+    <div class="videobox">
+        <div class="video">
+            <iframe
+                src="//player.bilibili.com/player.html?aid=701480910&bvid=BV1xm4y1j79u&cid=1209840083&p=1&autoplay=0"
+                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                style="width: 500px; height: 300px;"> </iframe>
+        </div>
+
+        <div class="video">
+            <iframe src="//player.bilibili.com/player.html?aid=989673211&bvid=BV1W44y197Hw&cid=948193465&p=&autoplay=0"
+                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                style="width: 500px; height: 300px;"> </iframe>
+        </div>
+    </div>
+
+    <div class="videobox">
+        <div class="video">
+            <iframe
+                src="//player.bilibili.com/player.html?aid=446285489&bvid=BV1ij411R72P&cid=1206927800&p=1&autoplay=0"
+                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                style="width: 500px; height: 300px;"> </iframe>
+        </div>
+
+        <div class="video">
+            <iframe src="//player.bilibili.com/player.html?aid=856131493&bvid=BV1DV4y1J7kr&cid=780474943&p=1&autoplay=0"
+                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                style="width: 500px; height: 300px;"> </iframe>
+        </div>
+    </div>
+
+    <!-- 第五部分 -->
+    <h1 class="wtitle" style="margin-top: 200px;" id="title5">数据图表</h1>
+   
+
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="chart-container" style="width: 100%; height:400px;"></div>
+    
+    
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('chart-container'));
+
+        // 韩国团体名字
+        var names = ['NewJeans', 'group1', 'group2', 'group3', 'group4', 'group5'];
+
+        // 随机生成人气值的函数
+        function generatePopularity(name) {
+            var popularity = [];
+            for (var i = 0; i < 16; i++) {
+                if (name === 'NewJeans') {
+                    //50到100之间的随机数
+                    popularity.push(Math.random() * 50 + 50);  // 保证newjeans的人气最高
+                } else {
+                    //10到60之间的随机数
+                    popularity.push(Math.random() * 50 + 10);
+                }
+            }
+            return popularity;
+        }
+
+        // 生成从2022年7月到2023年10月的时间
+        var times = [];
+        for (var i = 7; i <= 12; i++) {
+            times.push('2022-' + (i < 10 ? '0' + i : i));
+        }
+        for (var i = 1; i <= 10; i++) {
+            times.push('2023-' + (i < 10 ? '0' + i : i));
+        }
+
+        // 指定图表的配置项和数据
+        var option = 
+        {
+            title: 
+            {
+                text: '韩国演唱组合人气变化',
+                left: 'center',  // 将标题居中
+                top: 0  // 将标题放在图例上面
+            },
+            // 设置提示框组件的内容
+            tooltip: {
+                trigger: 'axis',  // 触发类型为坐标轴触发
+            },
+            legend: 
+            {
+                data: names,
+                top: 30  // 调整图例的位置
+            },
+            xAxis: 
+            {
+                data: times
+            },
+            yAxis: {},
+
+            // names.map(function (name) {...}) 是使用JavaScript的Array.prototype.map方法对names数组中的每个元素执行一个函数，并返回一个新的数组
+            series: names.map(function (name) 
+            {
+                return {
+                    name: name,
+                    type: 'line',
+                    data: generatePopularity(name),
+                    animationDelay: function (idx) {
+                        return idx * 10;  // 每个数据项的动画延迟是其索引的10倍,图表的动画将从第一个数据项开始，依次向后进行
+                    },
+                    animationDuration: 2000  // 动画持续时间
+                };
+            })
+        };
+
+        // 创建一个Intersection Observer来检测图表元素是否在视口中
+        var observer = new IntersectionObserver(function (entries) {
+            // 如果图表元素在视口中，就开始动画
+            if (entries[0].isIntersecting) {
+                // 使用刚指定的配置项和数据显示图表。
+                myChart.setOption(option);
+            }
+        });
+
+        // 开始观察图表元素
+        observer.observe(document.getElementById('chart-container'));
+    </script>
+
+
+
+    <!-- 底部网站导航栏 -->
+    <div class="footer">
+        <div style="width: 750px; margin: 0 auto;">
+            <div class="footerbox"><a href="https://newjeans.kr/" target="_blank">官网</a></div>
+            <div class="footerbox"><a href="https://weibo.com/u/7783924288" target="_blank">微博</a></div>
+            <div class="footerbox">
+                <a href="https://space.bilibili.com/3493092783032940?spm_id_from=333.337.search-card.all.click"
+                    target="_blank">BiliBili
+                </a>
+            </div>
+            <div class="footerbox" style="margin-right: 0px;">
+                <a href="https://www.youtube.com/@NewJeans_official" target="_blank">Youtube</a>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

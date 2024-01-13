@@ -1,0 +1,50 @@
+
+.mem {
+    width: 200px;
+    /* float: left; */
+    /* margin-right: 100px; */
+}
+
+.mem a img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+   /* transform: translateY(0); */
+   transition: all 0.3s ease-in-out;
+}
+
+
+.mem img:hover {
+    /* transform: translateY(-10px); */
+    /* transform: 1.1; */
+    box-shadow: 0 0 10px 10px rgba(99, 99, 176,0.4);
+    scale: 1.2;
+}
+
+.mem p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.mem-p1 {
+    background-color: rgb(50, 47, 227);
+   
+}
+
+.mem-p2 {
+    background-color: rgb(255, 26, 152);
+}
+
+.mem-p3 {
+    background-color: rgb(255, 214, 108);
+}
+
+.mem-p4 {
+    background-color: rgb(13, 246, 97);
+}
+
+.mem-p5 {
+    background-color: rgb(255, 136, 253);
+}
