@@ -6,8 +6,3 @@ haerin可爱捏
 hyein
 danille
 
-## 124天下第一
-newhair newtee newjeans
-
-adededeede  
-bdedede  sd
